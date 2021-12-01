@@ -20,14 +20,8 @@
 	<description>Spring Boot Pet Clinic Application</description>
 	<properties>
 		<java.version>11</java.version>
+		<maven.release.version>3.0.0-M4</maven.release.version>
 	</properties>
-	<dependencies>
-
-
-
-
-
-	</dependencies>
 
 	<build>
 		<plugins>
@@ -43,7 +37,20 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>${maven.release.version}</version>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
+	<scm>
+		<developerConnection>scm:git:https://github.com/costel213/pet-clinic.git</developerConnection>
+	</scm>
 
 </project>
