@@ -1,12 +1,12 @@
 package com.costelmitrea.petclinic.services.map;
 
 import com.costelmitrea.petclinic.model.Vet;
-import com.costelmitrea.petclinic.services.CrudService;
+import com.costelmitrea.petclinic.services.VetService;
 
 import java.util.Set;
 
 public class VetServiceMap extends AbstractMapService<Vet, Long>
-                            implements CrudService<Vet, Long> {
+                            implements VetService {
 
     @Override
     public Vet findById(Long id) {

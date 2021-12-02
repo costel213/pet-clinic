@@ -1,12 +1,12 @@
 package com.costelmitrea.petclinic.services.map;
 
 import com.costelmitrea.petclinic.model.Owner;
-import com.costelmitrea.petclinic.services.CrudService;
+import com.costelmitrea.petclinic.services.OwnerService;
 
 import java.util.Set;
 
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>
-                            implements CrudService<Owner, Long> {
+                            implements OwnerService {
 
     @Override
     public Owner findById(Long id) {
@@ -31,5 +31,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long>
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
