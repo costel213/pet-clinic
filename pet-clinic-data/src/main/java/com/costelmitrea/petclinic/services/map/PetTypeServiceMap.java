@@ -2,9 +2,11 @@ package com.costelmitrea.petclinic.services.map;
 
 import com.costelmitrea.petclinic.model.PetType;
 import com.costelmitrea.petclinic.services.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetTypeServiceMap extends AbstractMapService<PetType, Long>
         implements PetTypeService {
 
