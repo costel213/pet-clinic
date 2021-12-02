@@ -2,9 +2,11 @@ package com.costelmitrea.petclinic.services.map;
 
 import com.costelmitrea.petclinic.model.VetSpeciality;
 import com.costelmitrea.petclinic.services.SpecialityService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class SpecialityServiceMap extends AbstractMapService<VetSpeciality, Long>
             implements SpecialityService {
 

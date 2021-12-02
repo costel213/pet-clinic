@@ -1,14 +1,14 @@
 package com.costelmitrea.petclinic.services.map;
 
 import com.costelmitrea.petclinic.model.Pet;
-import com.costelmitrea.petclinic.services.CrudService;
+import com.costelmitrea.petclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
 public class PetServiceMap extends AbstractMapService<Pet, Long>
-                            implements CrudService<Pet, Long> {
+                            implements PetService {
 
     @Override
     public Pet findById(Long id) {
